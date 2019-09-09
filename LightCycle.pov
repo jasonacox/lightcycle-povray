@@ -1,3 +1,15 @@
+  /*
+  LightCycle.pov
+
+  This Scene defines the LightCycle model (designed by Carl N. Hoff) and places 6 
+  LightCycles of differnt colors on a Grid.
+
+  Position of LightCycles is calculated based on frame number for animation.
+  
+  CREDIT: The LightCycle model used here was created by Carl N. Hoff
+
+  */
+  
   #include "colors.inc"
   #include "transforms.inc" 
   #include "math.inc"
@@ -5,18 +17,7 @@
   #include "textures.inc"
   #include "glass.inc"
   /* 
-  A Lightcycle from the movie TRON.
-  Modeled by Carl N. Hoff
-  
-  All I ask is that if you use my code please give me credit and if you are willing please share your creations with me.  
-  My personal email address is about to change so instead of putting that here I'll say you can always
-  PM me at either of these forums:
-  http://www.tron-sector.com/forums/
-  http://www.macrossworld.com/mwf/index.php
-  My user ID is wwwmwww on both boards.
-  
-  Enjoy,
-  Carl   
+    ---- Define LightCycle Model ----
   */
   #declare trail = box {<-25000,0,-1>,<0,190,1> texture { T_Glass4 } interior {I_Glass caustics 1}} 
   
@@ -190,6 +191,9 @@
     } 
   #end     
   
+  /* 
+    ---- Scene Setup - Place LightCycles ----
+  */
   LightCycle(12*clock,-5,x,Red)   
   LightCycle(8*clock,0,x,Orange)  
   LightCycle(17*clock*clock,5,x,Yellow)
@@ -197,13 +201,20 @@
   LightCycle(15*clock,15,x,Blue)  
   LightCycle(8*clock,20,x,Magenta)  
   
+  /* 
+    ---- Scene Setup - Place Grid and set Background ----
+  */
   object {grid}  
-  
   background {Blue}
-    
-  // camera {location <25-(clock*50),25-(clock*5),-28+(clock*clock*clock*25)> look_at <5*17*clock*clock-20,0,5> angle 30}
+
+  /* 
+    ---- Camera Placement ----
+  */
   camera {location <25-(clock*50),25-(clock*5),-28+(clock*clock*clock*25)> look_at <10*17*clock*clock-20,0,5> angle 30}
   
+  /* 
+    ---- Light Source Setup ----
+  */
   light_source {<7.2, 18.8, -12.5> 1.4*White shadowless}
   light_source {<7.2, 18.8, -12.5> 0.7*White}  
   
