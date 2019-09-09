@@ -14,9 +14,9 @@ The POV-Ray model for the LightCycle used here is based on work done by Carl N. 
 
 ### Install POV-Ray
 Install the `povray` software on your computer using a package manager:
-	* Linux (Ubuntu) - `apt-get install povray`
-	* MacOS - `brew install povray`
-	* Window - Download Installer [Here](http://www.povray.org/)
+* Linux (Ubuntu) - `apt-get install povray`
+* MacOS - `brew install povray`
+* Window - Download Installer [Here](http://www.povray.org/)
 
 ### Render a Single Frame
 The model and scene description is located in the [LightCycle.pov](../blob/master/LightCycle.pov) file.
