@@ -5,7 +5,7 @@ A TRON LightCycle Model and Animation Script for POV-Ray
 ## Background
 
 * The original TRON LightCycle was created using simple geometric primatives.
-* [The Persistence of Vision Raytracer](http://www.povray.org/) is a free ray tracing renderer that takes simple geometic and scene descriptions to produce high-quality images. 
+* [The Persistence of Vision Raytracer](http://www.povray.org/) is a free raytracer that takes simple geometic and scene descriptions to produce high-quality images. 
 
 The POV-Ray model for the LightCycle used here is based on work done by Carl N. Hoff.
 
@@ -35,3 +35,6 @@ ffmpeg -r 24 -i LightCycle%03d.png -s:v 800x600 -c:v libx264 -profile:v high -cr
 
 ![Lightcycle Image](/media/LightCycle.png)
 
+## Blog Post on POV-Ray
+
+https://www.jasonacox.com/wordpress/tron
