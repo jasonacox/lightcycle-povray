@@ -33,5 +33,5 @@ ffmpeg -r 24 -i LightCycle%03d.png -s:v 800x600 -c:v libx264 -profile:v high -cr
 
 ## Examples
 
-![Lightcycle Image]("https://raw.githubusercontent.com/jasonacox/lightcycle-povray/master/media/LightCycle.png")
+![Lightcycle Image]("/media/LightCycle.png")
 
