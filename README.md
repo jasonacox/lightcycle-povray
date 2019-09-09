@@ -19,13 +19,13 @@ Install the `povray` software on your computer using a package manager:
 * Window - Download Installer [Here](http://www.povray.org/)
 
 ### Render a Single Frame
-The model and scene description is located in the [LightCycle.pov](../blob/master/LightCycle.pov) file.
+The model and scene description is located in the [LightCycle.pov](LightCycle.pov) file.
 ```
 povray LightCycle.pov
 ```
 
 ### Render Movie
-The animation (start/end frame) settings are located in the [LightCycle.ini](../blob/master/LightCycle.ini) file.
+The animation (start/end frame) settings are located in the [LightCycle.ini](LightCycle.ini) file.
 ```
 povray LightCycle.ini
 ffmpeg -r 24 -i LightCycle%03d.png -s:v 800x600 -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p LightCycle.mp4
